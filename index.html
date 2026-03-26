@@ -1354,9 +1354,15 @@
                         </div>
                     </div>
                     <ul class="exp-points">
-                        <li>Architected end-to-end ML pipelines for stock price forecasting using ARIMA, SARIMAX, LSTM models with custom genetic optimization, leading research across 15+ ML/DL architectures that improved prediction accuracy by 6% and backtested trading signal precision by 4%.</li>
-                        <li>Engineered production-grade GraphQL API layer with Flask-based microservices architecture, building a Master AI bot orchestrating multiple deep learning model endpoints and handling 10K+ daily prediction requests with Git-based CI/CD pipelines.</li>
-                        <li>Built automated data synchronization and ETL system integrating PostgreSQL with Google Sheets API, reducing manual data workflows by 92% (60+ min to 3 min) and accelerating model deployment cycles by 40%.</li>
+                        <li>Identified that lagging sector-ETF returns outperformed 8 other candidate features (rolling volatility, RSI, MACD) in
+                                predicting next-week price direction across 200+ tickers; communicated feature importance rankings to the trading signals team, directly
+                                informing their shift from an ARIMA baseline to a supervised learning approach..</li>
+                        <li>Designed an offline backtesting evaluation framework comparing 10 model architectures on directional accuracy, Sharpe ratio, and
+                                max drawdown, surfaced that gradient-boosted models matched deep learning precision (65%) at 12x lower inference cost, preventing
+                                over-engineering of a production LSTM pipeline.</li>
+                        <li>Cut data preparation workflows by 92% (60+ min to 3 min per sync) by building an automated ETL pipeline integrating PostgreSQL
+                                with Google Sheets API; wrote 50+ SQL queries (joins, window functions, CTEs) to reconcile daily OHLCV data across 4 source
+                                tables, freeing 8+ analyst-hours per week.</li>
                     </ul>
                     <div class="exp-tags">
                         <span class="exp-tag">Python</span>
@@ -1382,9 +1388,15 @@
                         </div>
                     </div>
                     <ul class="exp-points">
-                        <li>Built predictive analytics models using Python (scikit-learn, XGBoost, pandas) and SQL to forecast client revenue trends from SAP S/4HANA data, achieving 87% forecast accuracy supporting quarterly business planning.</li>
-                        <li>Developed automated data extraction and cleaning scripts to consolidate raw data from multiple SAP modules, reducing manual data preparation time by 45%.</li>
-                        <li>Created interactive Power BI dashboards for client reporting, automating weekly report generation and improving reporting turnaround time from 2 days to 4 hours.</li>
+                        <li>Analyzed 12 client accounts’ SAP S/4HANA records and identified recency-weighted purchase frequency and seasonal spend
+                                ratios as top revenue predictors, engineered these into an XGBoost model achieving 87% accuracy (MAPE: 13%), with results directly
+                                shaping quarterly C-suite planning recommendations.</li>
+                        <li>Designed 5 interactive Power BI dashboards mapping sales trends, churn risk segments, and 7+ KPIs to executive questions;
+                                replaced a 2-day manual Excel reporting cycle with 4-hour automated refresh, enabling stakeholder self-service and reducing ad-hoc data
+                                requests by ˜60%.</li>
+                        <li>Reduced data preparation time by 45% by building Python scripts (pandas, NumPy) that consolidated 4 SAP modules into
+                                analysis-ready formats via standardized cleaning logic (null imputation, duplicate detection, schema validation), eliminating recurring
+                                quality errors across 3 downstream pipelines.</li>
                     </ul>
                     <div class="exp-tags">
                         <span class="exp-tag">Scikit-learn</span>
@@ -1649,8 +1661,8 @@
         </div>
     </section>
 
-    <!-- ==================== RESUME MODAL ==================== -->
-    <div class="resume-modal" id="resumeModal">
+    <!-- ====================  MODAL ==================== -->
+    <div class="-modal" id="resumeModal">
         <div class="resume-modal-overlay" id="resumeOverlay"></div>
         <div class="resume-modal-content">
             <div class="resume-modal-header">
@@ -1659,7 +1671,7 @@
                     Resume
                 </h3>
                 <div class="resume-modal-actions">
-                    <a href="assets/files/Ameer Shaik's_Resume.pdf" download class="btn-download">
+                    <a href="assets/files/Ameer_RESUME.pdf" download class="btn-download">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         Download PDF
                     </a>
